@@ -3,6 +3,7 @@
 docker run -d --name kong \
      -e "KONG_DATABASE=postgres" \
      -e "KONG_PG_HOST=$PG_IP" \
+     -e "KONG_PG_PORT=$PG_PORT" \
      -e "KONG_PG_USER=kong" \
      -e "KONG_PG_PASSWORD=kong" \
      -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
